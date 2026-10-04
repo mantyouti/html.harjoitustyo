@@ -19,5 +19,11 @@ img{
 .gallery-item img{
     max-width: 100%;
     height: auto;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(166, 247, 222);
 }
