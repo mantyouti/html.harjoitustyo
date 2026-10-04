@@ -11,10 +11,13 @@ body {
     padding: 10px;
 }
 
-/*kuvat*/
-.gallery {
-    display: flex; 
-    flex-wrap: wrap; /*rivitys otettu käyttöön*/
-    gap: 20px;
+img{
+    max-width: 50%;
+    height: 50px;
+}
 
-}   
+.gallery-item img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+}

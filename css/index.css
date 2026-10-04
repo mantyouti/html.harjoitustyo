@@ -3,10 +3,12 @@ body {
     background-color: rgb(166, 247, 222);
     width: 90%;
     margin: 0 auto;
+    border-bottom: 2px solid black;
 }
 
 .navi{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+
 }
