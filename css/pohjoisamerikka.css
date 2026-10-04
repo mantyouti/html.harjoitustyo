@@ -1,0 +1,20 @@
+/* elementtiin liittyvä tyyli*/
+body {
+    background-color: rgb(166, 247, 222);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*kuvat*/
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; /*rivitys otettu käyttöön*/
+    gap: 20px;
+
+}   
