@@ -12,7 +12,7 @@ body {
 main{
     flex: 1;
 }
-
+/*Otsikon muotoilua ja keskittämistä*/
 h1{
     margin-bottom: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -27,6 +27,7 @@ h1{
 }
 
 .navi{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center; 
