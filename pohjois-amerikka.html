@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pohjois-Amerikka</title>
-    <link rel="stylesheet" href="css/pohjoisamerikka.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
-<p class="navi">Pikalinkit
+<p class="navi">
+    <a href="index.html">Etusivu</a>
     <a href="eurooppa.html">Eurooppa</a>
     <a href="pohjois-amerikka.html">Pohjois-Amerikka</a>
-    <a href="aasia.html">Aasia</a>/</p> 
+    <a href="aasia.html">Aasia</a></p> 
       
 <body>
     <header>
         <h1>2. Kuvia Pohjois-Amerikasta</h1>
     </header>
-
-    <main>
+<main>
+        <div class="container">
         <section class="gallery-section">
             <h2>Kuvia Seattlesta</h2>
-        
-        <div class="gallery">
-            <figure class="gallery-item">
-                <img src="images/spaceneedle.jpg" alt="Space Needle -torni Seattlen spaceneedle"/> 
-                <figcaption>Kaupungin kuuluisin nähtävyys, käveltiin muuten alas nuo rappuset</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="images/seattlefromcar.jpg" alt="Seattlen näkymä autosta"/> 
-                <figcaption>Syksyistä maisemaa Seattlessa</figcaption>
-            </figure>
-        </div>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="images/spaceneedle.jpg" alt="Space Needle -torni Seattlen spaceneedle"/> 
+                    <figcaption>Kaupungin kuuluisin nähtävyys, käveltiin muuten alas nuo rappuset</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/seattlefromcar.jpg" alt="Seattlen näkymä autosta"/> 
+                    <figcaption>Syksyistä maisemaa Seattlessa</figcaption>
+                </figure>
+            </div>        
+            <video  controls class="video">
+                <source src="videos/spaceneedlevideo.mp4" type="video/mp4">
+                <figcaption>Videokuvaa Spaceneedlen lattian läpi</figcaption>
+            </video>
         </section>
 
-            <section class="gallery-section">
-        <header>
         <h2>Kuvia Los Angelesista</h2>
-        </header>
-
+        <section class="gallery-section">
         <div class="gallery">
             <figure class="gallery-item">
                 <img src="images/losangeles1.jpg" alt="Hollywood kyltti Los Angelesissa"/> 
@@ -61,18 +63,33 @@
         <div class="gallery">
             <figure class="gallery-item">
                 <img src="images/lasvegas1.jpg" alt="Las Vegas "/> 
-                <figcaption>Hollywood kyltti</figcaption>
+                <figcaption>Las Vegas kyltti</figcaption>
             </figure>
             <figure class="gallery-item">
                 <img src="images/lasvegas2.jpg" alt="Santa Monica- laituri Las Vegasissa"/> 
-                <figcaption>Santa Monica- laituri</figcaption>
+                <figcaption>Hienoja valoja kaupungilla</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/lasvegas3.jpg" alt="Hollywood Boulevard Las Vegasissa"/> 
-                <figcaption>Hollywood Boulevard</figcaption>
+                <img src="images/lasvegas3.jpg" alt=Chumlee, Panttilainakonttori>
+                <figcaption>Pääsin Chumleen kainaloon (Pawn Stars)</figcaption>
             </figure>
         </div>
         </section>
-    </main>
+  
+
+            <h2>Video Olympic National Parkista</h2>
+        <section>
+        <video  controls class="video">
+            <source src="videos/isopuu.mp4" type="video/mp4">
+            <figcaption>Puiston suurimpia puita</figcaption>
+        </video>
+
+        </section>
+    </div>
+</main>
+    <footer> <!---->
+        <p>Copyright &copy; Outi Mänty</p>
+        <a href="#top">Takaisin alkuun</a>
+    </footer>
 </body>
 </html>

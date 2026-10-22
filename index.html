@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="fi">
 
-<head>
+<head>  <!--tähän tulee esim. meta-tagiä ja sivun otsikkoa selaimen välilehdellä -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Lomamatkoja elämän varrelta</title>
+    
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
-<p class="navi">Pikalinkit
-    <a href="eurooppa.html">Eurooppa</a>
-    <a href="pohjois-amerikka.html">Pohjois-Amerikka</a>
-    <a href="aasia.html">Aasia</a>/</p>   
+<body> <!--Body sisältää sivun sisällön, eli otsikon, pikalinkit ja listat-->
+    
+    <header>  
+        <h1>Matkoja eri puolilta maailmaa</h1>
 
-<body>
-    <header>
-    <h1>Kuvia lomamatkoista eri puolelle maailmaa</h1>
+        <nav class="navi"> <!--pikalinkit ja navigointi sivustolla-->
+            <a href="index.html">Etusivu</a>
+            <a href="eurooppa.html">Eurooppa</a>
+            <a href="pohjois-amerikka.html">Pohjois-Amerikka</a>
+            <a href="aasia.html">Aasia</a>
+        </nav>   
+    </header>
 
-    <p>
-        Olemme puolisoni kanssa matkustelleet jonkin verran tässä vuosien varrella.
+<main> <!--tekstit, listat ja linkit kuviin-->
+    
+    <p class="teksti">Olemme puolisoni kanssa matkustelleet jonkin verran tässä vuosien varrella.
         Ensimmäinen matkamme oli <strong>Rodokselle</strong> elokuussa 1999. 
         Sen jälkeen olemmekin käyneet siellä monta kertaa. Se on mielestäni 
-        paras paikka (<EM>tuttu ja turvallinen</EM>)!
-    </p>
-    </header>
-        
-    <main>
-        <p>Olemme käyneet maanosista Euroopassa, Aasiassa ja Pohjois-Amerikassa.</p 
+        paras paikka (<EM>sekä tuttu ja turvallinen</EM>)!
+        Olemme käyneet maanosista Euroopassa, Aasiassa ja Pohjois-Amerikassa.</p>
 
-    <section>
-    <h2>Lomamatkoja eri kohteisiin:</h2>
+    <div class="container">
 
-    <div>
-        <ul>
-            <ul>
-                <li id="eurooppa"><strong><a href="eurooppa.html" target="_blank">1. Eurooppa:</a></strong></li>
+        <h2>Lomamatkoja eri kohteisiin:</h2> <!--tähän tulee linkit ja listat-->
+
+        <div class="kohteet"> <!--div = laatikko, jonka elementtejä muokataan css:llä -->
+            <a href="eurooppa.html" target="_blank" class="kohde-linkki">
+            <section class="kohde" id="eurooppa"> <!--section = yksi maanosa -->
+                <ul> <!--aloittaa listan/luettelon-->
+                    <li> <strong>1. Eurooppa</strong>
+                        <ul>
+                            <li>Norja
+                                <ul>
+                                    <li>Lofootit</li>
+                                </ul>
+                    </li>
+                        <li>Kreikka
+                            <ul>
+                                <li>Rodos</li>
+                            </ul>
+                    </li>
+                        <li>Espanja
+                            <ul>
+                                <li>Teneriffa</li>
+                            </ul>
+                    </li>
+                        <li>Iso-Britannia
+                        <ul>
+                            <li>Skotlanti</li>
+                        </ul>
+                    </li>
+                </ul> <!--lopettaa luettelon-->
+            </section>
+            </a>
+                <a href="pohjois-amerikka.html" target="_blank" class="kohde-linkki">
+            <section class="kohde" id="pohjois-amerikka"> <!--section = yksi maanosa -->
                 <ul>
-                    <li>Norja</li>
-                    <ul>
-                        <li>Lofootit</li>
-                    </ul>
-                    <li>Kreikka</li>
-                    <ul>
-                        <li>Rodos</li>
-                    </ul>
-                    <li>Espanja</li>
-                    <ul>
-                        <li>Teneriffa</li>
-                    </ul>
-                    <li>Iso-Britannia</li>
-                    <ul>
-                        <li>Skotlanti</li>
-                    </ul>
-
+                    <li>2. Pohjois-Amerikka
+                        <ul>
+                            <li>Seattle</li>
+                            <li>Los Angeles</li>
+                            <li>Las Vegas</li>
+                            <li>Video Olympic National Forest</li> 
+                        </ul>
+                    </li>
                 </ul>
-    </section>
+            </section>
+            </a>
 
-                <br>
-                <li id="pohjoisamerikka"><strong><a href="pohjois-amerikka.html" target="_blank">2. Pohjois-Amerikka:</a></strong></li>
+            <a href="aasia.html" target="_blank" class="kohde-linkki">
+            <section class="kohde" id="aasia"> <!--section = yksi maanosa -->
                 <ul>
-
-                    <li>Yhdysvallat</li>
-                    <ul>
-                        <li>Seattle</li>
-                        <li>Los Angeles</li>
-                        <li>Las Vegas</li>
-                    </ul>
+                    <li>3. Aasia
+                        <ul>
+                            <li>Arabiemiraatit</li>
+                            <ul>
+                                <li>Dubai</li>
+                            </ul>
+                        <li>Kypros (Turkin puoli)</li>
+                        <ul>
+                    </li>
                 </ul>
-
-                <li id="aasia"><strong><a href="aasia.html" target="_blank">3. Aasia:</a></strong></li>
-                <ul>
-                    <li>Arabiemiraatit</li>
-                    <ul>
-                        <li>Dubai</li>
-                    </ul>
-                    <li>Kypros(Turkin puoli)</li>
-                    <ul>
+            </section>
+            </a>
+        </div>
     </div>
-</section>
 </main>
+
+    <footer> <!--verkkosivun alatunniste-->
+        <p>Copyright &copy; Outi Mänty</p>
+    </footer>
+
 </body>
 
 </html>
